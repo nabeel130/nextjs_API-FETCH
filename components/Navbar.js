@@ -2,28 +2,22 @@ import Link from 'next/link';
 
 function Navbar() {
     return (
-        <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
             <Link href="/">
-                <a className="home">Home</a>
-            </Link>
-            <Link href="/about">
-                <a className="about">About</a>  
-            </Link>
-            <style jsx>{`
-                
-                a{
-                    color : black;
-                    text-decoration: none;
-                    padding: 10px 20px;
-                    display : inline-block;
-                    background: white;
-                    border: 1px solid black;
-                    margin-right: 10px
-                    }
-                
-            `}
-            </style>
+            <a class="nav-link" >Home</a>
+            </Link> 
+            </li>
+            <li class="nav-item">
+            <Link href="/about"><a class="nav-link" >About us</a></Link>
+            </li>
+          </ul>
+         
         </div>
+      </nav>
+       
     )
 }
 
